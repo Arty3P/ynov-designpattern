@@ -5,6 +5,10 @@ const product = { Book, Dress };
 module.exports = {
 	createProduct(type, attributes) {
 		const ProductType = product[type];
-		return new ProductType(attributes);
+		if(ProductType) {
+			return new ProductType(attributes);
+		} else {
+			return "Produit non conforme"
+		}
 	}
 }

@@ -11,5 +11,11 @@ const dress = productFactory.createProduct("Dress", {
 	color: 'blue'
 });
 
+const test = productFactory.createProduct("Test", {
+	name: 'Lord of the Ring',
+	nbPage: 3000
+});
+
 console.log(book);
 console.log(dress);
+console.log(test);
